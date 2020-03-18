@@ -63,7 +63,7 @@ public class Testes_13_03_2020 {
     }
     //Feature 2: Soma de datas
     @Test
-    public void testarMetodoplusDaysQuandoEhAdicionado1(){
+    public void adicionarDiaPositivo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -79,13 +79,12 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoplusDaysQuandoEhAdicionadoMenos1(){
+    public void adicionarDiaNegativo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
         //Exercise SUT
         data = data.plusDays(-1);
-
 
         //Result Verification
         assertEquals(19, data.getDayOfMonth());
@@ -94,7 +93,7 @@ public class Testes_13_03_2020 {
         //Fixture Teardown
     }
     @Test
-    public void testarMetodoplusMonthsQuandoEhAdicionado1(){
+    public void adicionarMesPositivo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -103,14 +102,13 @@ public class Testes_13_03_2020 {
 
         //Result Verification
         assertEquals(3, data.getMonthOfYear());
-
         assertEquals(2021, data.getYear());
         assertEquals(20, data.getDayOfMonth());
         //Fixture Teardown
     }
 
     @Test
-    public void testarMetodoplusYearsQuandoEhAdicionado1(){
+    public void adicionarAnoPositivo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -119,14 +117,13 @@ public class Testes_13_03_2020 {
 
         //Result Verification
         assertEquals(2022, data.getYear());
-
         assertEquals(2, data.getMonthOfYear());
         assertEquals(20, data.getDayOfMonth());
         //Fixture Teardown
     }
 
     @Test
-    public void testarMetodoplusplusWeeksQuandoEhAdicionado1(){
+    public void adicionarSemanaPositiva(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -135,7 +132,6 @@ public class Testes_13_03_2020 {
 
         //Result Verification
         assertEquals(27, data.getDayOfMonth());
-
         assertEquals(2, data.getMonthOfYear());
         assertEquals(2021, data.getYear());
         //Fixture Teardown
@@ -143,7 +139,7 @@ public class Testes_13_03_2020 {
 
     // Feature 3: Subtração de datas
     @Test
-    public void testarMetodoMinusDaysQuandoEhAdicionado1(){
+    public void diminuirUmDia(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -156,7 +152,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoMinusMonthsQuandoEhAdicionado1(){
+    public void diminuirUmMes(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -168,7 +164,7 @@ public class Testes_13_03_2020 {
         //Fixture Teardown
     }
     @Test
-    public void testarMetodoMinusWeeksQuandoEhAdicionado1(){
+    public void diminuirUmaSemana(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -181,7 +177,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoMinusYearsQuandoEhAdicionado1(){
+    public void diminuirUmAno(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -194,7 +190,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoMinusDaysQuandoEhAdicionadoMenos1(){
+    public void diminuirUmDiaNegativo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -207,7 +203,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoMinusMonthsQuandoEhAdicionadoMenos1(){
+    public void diminuirUmMesNegativo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -219,7 +215,7 @@ public class Testes_13_03_2020 {
         //Fixture Teardown
     }
     @Test
-    public void testarMetodoMinusWeeksQuandoEhAdicionadoMenos1(){
+    public void diminuirUmSemanaNegativo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -232,7 +228,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testarMetodoMinusYearsQuandoEhAdicionadoMenos1(){
+    public void diminuirUmAnoNegativo(){
         // Fixture Setup
         LocalDate data = new LocalDate(2021,2,20);
 
@@ -246,7 +242,7 @@ public class Testes_13_03_2020 {
     // _____________________
     //Feature 4: Criação de horas
     @Test
-    public void testCriacaoDeHoras(){
+    public void criarHora(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -260,7 +256,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void testCriacaoDeHoraErrada(){
+    public void criarHoraComHoraErrada(){
         // Fixture Setup
         LocalTime time = new LocalTime(24,30, 00);
 
@@ -272,7 +268,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void testCriacaoDeHora_MinutoErrada(){
+    public void criarHoraComMinutoErrada(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,61, 00);
 
@@ -284,7 +280,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void testCriacaoDeHora_SegundosErrada(){
+    public void criarHoraComSegundosErrada(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 100);
 
@@ -297,7 +293,7 @@ public class Testes_13_03_2020 {
 
     // Feature 5: Soma de horas
     @Test
-    public void testSomaHoras(){
+    public void somaUmaHora(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -311,7 +307,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testSomaMinutosHoras(){
+    public void somaUmMinuto(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -325,7 +321,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testSomaSegundosHoras(){
+    public void somaUmSegundo(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -340,7 +336,7 @@ public class Testes_13_03_2020 {
 
     // Feature 6: Subtração de horas
     @Test
-    public void testMenosHoras(){
+    public void DiminuirUmaHora(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -354,7 +350,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testMenosMinutosHoras(){
+    public void DiminuirUmaMinuto(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 00);
 
@@ -368,7 +364,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void testMenosSegundosHoras(){
+    public void DiminuirUmaSegundo(){
         // Fixture Setup
         LocalTime time = new LocalTime(10,30, 01);
 
@@ -418,7 +414,7 @@ public class Testes_13_03_2020 {
     }
     // Feature 8: Criação de data/hora
     @Test
-    public void CriacaoDeDataEHoraCerta(){
+    public void criarDataEHoraCerta(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 13, 10, 30, 00);
 
@@ -434,7 +430,7 @@ public class Testes_13_03_2020 {
         //Fixture Teardown
     }
     @Test (expected = IllegalFieldValueException.class)
-    public void CriacaoDeDataEHoraComMesErrado(){
+    public void criarDataEHoraComMesErrado(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 13, 25, 30, 00);
 
@@ -446,7 +442,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void CriacaoDeDataEHoraComDiaErrado(){
+    public void criarDataEHoraComDiaErrado(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 34, 3, 30, 00);
 
@@ -458,7 +454,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void CriacaoDeDataEHoraComDiaHora(){
+    public void criarDataEHoraComDiaHora(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 1, 33, 30, 00);
 
@@ -470,7 +466,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void CriacaoDeDataEHoraComMinutosErrado(){
+    public void criarDataEHoraComMinutosErrado(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 1, 3, 90, 00);
 
@@ -482,7 +478,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test (expected = IllegalFieldValueException.class)
-    public void CriacaoDeDataEHoraComSegundosErrado(){
+    public void criarDataEHoraComSegundosErrado(){
         // Fixture Setup
         DateTime dataTime = new DateTime(2020, 03, 1, 3, 30, 90);
 
@@ -494,7 +490,7 @@ public class Testes_13_03_2020 {
     }
     //Feature 9: Intervalo de datas (Interval)
         @Test
-    public void TestIntervaloDoMetodoGetEnd(){
+    public void testIntervaloDoMetodoGetEnd(){
         // Fixture Setup
 
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
@@ -510,7 +506,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void TestIntervaloDoMetodoGetStart(){
+    public void testIntervaloDoMetodoGetStart(){
         // Fixture Setup
 
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
@@ -526,7 +522,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void TestMetodoIsAfterParaIntervalo(){
+    public void testMetodoIsAfterParaIntervalo(){
         // Fixture Setup
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
         DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
@@ -545,7 +541,7 @@ public class Testes_13_03_2020 {
     }
 
     @Test
-    public void TestMetodoIsBeforeParaIntervalo(){
+    public void testMetodoIsBeforeParaIntervalo(){
         // Fixture Setup
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
         DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
