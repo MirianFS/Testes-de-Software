@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea318d8c-3dd8-46c8-ac50-500b9f009a6e" name="Default Changelist" comment="" />
+    <list default="true" id="ea318d8c-3dd8-46c8-ac50-500b9f009a6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testes_13_03_2020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testes_13_03_2020.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZExUrb4pHugifVIhm35ExPPWSh" />
   <component name="ProjectViewState">
@@ -19,14 +25,15 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Bibliotecas/joda-time-2.9.9.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Testes_13_03_2020">
     <configuration name="Testes_13_03_2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testes_de_Software" />
       <option name="PACKAGE_NAME" value="" />
@@ -36,9 +43,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testes_13_03_2020.TestIntervalo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testes_de_Software" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testes_13_03_2020" />
+      <option name="METHOD_NAME" value="TestIntervalo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Testes_13_03_2020" />
+        <item itemvalue="JUnit.Testes_13_03_2020.TestIntervalo" />
       </list>
     </recent_temporary>
   </component>
@@ -53,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584418072781</updated>
       <workItem from="1584418077650" duration="875000" />
+      <workItem from="1584419516298" duration="2046000" />
+      <workItem from="1584489056111" duration="918000" />
     </task>
     <servers />
   </component>
@@ -68,29 +88,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584418619487" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1584418872634">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1584421582690">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584418872634" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1584418872633">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584421582690" />
+    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1584421582689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584418872633" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1584418872632">
+    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584421582689" />
+    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1584421582689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584418872632" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1584418872634">
+    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584421582689" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1584421582690">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584418872634" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584421582690" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1584418627839">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584418627839" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584489063000">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584489063000" />
     <state x="387" y="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584418242147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1584418242147" />
+    <state x="347" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584420280153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1584420280153" />
   </component>
 </project>

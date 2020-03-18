@@ -393,20 +393,30 @@ public class Testes_13_03_2020 {
         assertTrue(resultado);
         //Fixture Teardown
     }
-
     @Test
-    public void testBeforeDeDataEHora(){
+    public void testAfterDeDataEHoraQuandoDataTime1forMenorQueDataTime2(){
         // Fixture Setup
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
         DateTime dataTime2 = new DateTime(2020, 03, 13, 11, 30, 00);
         //Exercise SUT
-        Boolean resultado = dataTime1.isBefore(dataTime2);
+        Boolean resultado = dataTime1.isAfter(dataTime2);
         //Result Verification
-        assertTrue(resultado);
+        assertFalse(resultado);
         //Fixture Teardown
     }
-    //______________
 
+    @Test
+    public void testAfterDeDataEHoraQuandoDataTime1forIgualDataTime2(){
+        // Fixture Setup
+        DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
+        DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
+        //Exercise SUT
+        Boolean resultado = dataTime1.isAfter(dataTime2);
+        //Result Verification
+        assertFalse(resultado);
+        //Fixture Teardown
+    }
+    // Feature 8: Criação de data/hora
     @Test
     public void CriacaoDeDataEHoraCerta(){
         // Fixture Setup
@@ -423,138 +433,68 @@ public class Testes_13_03_2020 {
         assertEquals(00, dataTime.getMillisOfSecond());
         //Fixture Teardown
     }
-
-
-
-
-    // _____________________
-    @Test
-    public void testarMetodoIsAfterQuandoData1EhIgualAData2(){
+    @Test (expected = IllegalFieldValueException.class)
+    public void CriacaoDeDataEHoraComMesErrado(){
         // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,20);
-        LocalDate data2 = new LocalDate(2021,2,20);
+        DateTime dataTime = new DateTime(2020, 03, 13, 25, 30, 00);
 
         //Exercise SUT
-        boolean resultado = data1.isAfter(data2);
 
         //Result Verification
-        assertFalse(resultado);
+
         //Fixture Teardown
     }
 
-    @Test
-    public void testarMetodoIsAfterQuandoData1EhMenorData2(){
+    @Test (expected = IllegalFieldValueException.class)
+    public void CriacaoDeDataEHoraComDiaErrado(){
         // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,19);
-        LocalDate data2 = new LocalDate(2021,2,20);
+        DateTime dataTime = new DateTime(2020, 03, 34, 3, 30, 00);
 
         //Exercise SUT
-        boolean resultado = data1.isAfter(data2);
 
         //Result Verification
-        assertFalse(resultado);
+
         //Fixture Teardown
     }
 
-    @Test
-    public void testarMetodoIsAfterQuandoData1EhMaiorData2(){
+    @Test (expected = IllegalFieldValueException.class)
+    public void CriacaoDeDataEHoraComDiaHora(){
         // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,21);
-        LocalDate data2 = new LocalDate(2021,2,20);
+        DateTime dataTime = new DateTime(2020, 03, 1, 33, 30, 00);
 
         //Exercise SUT
-        boolean resultado = data1.isAfter(data2);
 
         //Result Verification
-        assertTrue(resultado);
-        //Fixture Teardown
-    }
-    // Testes complementares, só para testar todas os metodos
-    @Test
-    public void testarMetodoIsBefore(){
-        // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,19);
-        LocalDate data2 = new LocalDate(2021,2,20);
 
-        //Exercise SUT
-        boolean resultado = data1.isBefore(data2);
-
-        //Result Verification
-        assertTrue(resultado);
         //Fixture Teardown
     }
 
-    @Test
-    public void testarMetodoCenturyOfEra(){
-        //Obs.: Padrao americano é começar a contagem no valor 0
+    @Test (expected = IllegalFieldValueException.class)
+    public void CriacaoDeDataEHoraComMinutosErrado(){
         // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,19);
+        DateTime dataTime = new DateTime(2020, 03, 1, 3, 90, 00);
 
         //Exercise SUT
-        LocalDate.Property resultado = data1.centuryOfEra();
 
         //Result Verification
-        assertEquals(20 , resultado.get());
+
         //Fixture Teardown
     }
 
-    @Test
-    public void testarMetodoDayOfMonth(){
-        //Obs.: Padrao americano é começar a contagem no valor 0
+    @Test (expected = IllegalFieldValueException.class)
+    public void CriacaoDeDataEHoraComSegundosErrado(){
         // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,19);
+        DateTime dataTime = new DateTime(2020, 03, 1, 3, 30, 90);
 
         //Exercise SUT
-        LocalDate.Property resultado = data1.dayOfMonth();
 
         //Result Verification
-        assertEquals(19 , resultado.get());
+
         //Fixture Teardown
     }
-
-    @Test
-    public void testarMetodoDayOfWeek(){
-        // Fixture Setup
-        LocalDate data1 = new LocalDate(2021,2,21);
-
-        //Exercise SUT
-        LocalDate.Property resultado = data1.dayOfWeek();
-
-        //Result Verification
-        assertEquals(7 , resultado.get());
-        //Fixture Teardown
-    }
-
-    //________________________________________________________________
-
-
-    @Test
-    public void testBeforeDeHoras(){
-        // Fixture Setup
-        LocalTime time1 = new LocalTime(10,30, 00);
-        LocalTime time2 = new LocalTime(12,30, 00);
-        //Exercise SUT
-        Boolean resultado = time1.isBefore(time2);
-        //Result Verification
-        assertTrue(resultado);
-        //Fixture Teardown
-    }
-
-    @Test
-    public void testAfterDeHoras(){
-        // Fixture Setup
-        LocalTime time1 = new LocalTime(12,30, 00);
-        LocalTime time2 = new LocalTime(10,30, 00);
-        //Exercise SUT
-        Boolean resultado = time1.isAfter(time2);
-        //Result Verification
-        assertTrue(resultado);
-        //Fixture Teardown
-    }
-
-
-    @Test
-    public void Intervalo(){
+    //Feature 9: Intervalo de datas (Interval)
+        @Test
+    public void TestIntervaloDoMetodoGetEnd(){
         // Fixture Setup
 
         DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
@@ -568,6 +508,62 @@ public class Testes_13_03_2020 {
 
         //Fixture Teardown
     }
+
+    @Test
+    public void TestIntervaloDoMetodoGetStart(){
+        // Fixture Setup
+
+        DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
+        DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
+        Interval interval = new Interval(dataTime1, dataTime2);
+
+        //Exercise SUT
+        DateTime resultado =  interval.getStart();
+        //Result Verification
+        assertEquals(dataTime1, resultado);
+
+        //Fixture Teardown
+    }
+
+    @Test
+    public void TestMetodoIsAfterParaIntervalo(){
+        // Fixture Setup
+        DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
+        DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
+        Interval interval1 = new Interval(dataTime1, dataTime2);
+
+        DateTime dataTime3 = new DateTime(2020, 03, 14, 10, 30, 00);
+        DateTime dataTime4 = new DateTime(2020, 03, 14, 10, 30, 00);
+        Interval interval2 = new Interval(dataTime1, dataTime2);
+
+        //Exercise SUT
+        boolean resultado =  interval1.isAfter(interval2);
+        //Result Verification
+        assertTrue(resultado);
+
+        //Fixture Teardown
+    }
+
+    @Test
+    public void TestMetodoIsBeforeParaIntervalo(){
+        // Fixture Setup
+        DateTime dataTime1 = new DateTime(2020, 03, 13, 10, 30, 00);
+        DateTime dataTime2 = new DateTime(2020, 03, 13, 10, 30, 00);
+        Interval interval1 = new Interval(dataTime1, dataTime2);
+
+        DateTime dataTime3 = new DateTime(2020, 03, 14, 10, 30, 00);
+        DateTime dataTime4 = new DateTime(2020, 03, 14, 10, 30, 00);
+        Interval interval2 = new Interval(dataTime1, dataTime2);
+
+        //Exercise SUT
+        boolean resultado =  interval1.isBefore(interval2);
+        //Result Verification
+        assertTrue(resultado);
+
+        //Fixture Teardown
+    }
+
+    // Feature 10: Outros testes
     // Testes do Método Equals para LocalDate
     @Test
     public void testarMetodoEqualsQuandoDatasSaoIguais(){
