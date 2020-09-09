@@ -10,6 +10,6 @@
 ### Exercicio 1 - testes unitarios com JUnit 
 Criar testes de unidade para a biblioteca JodaTime,
 biblioteca para manipulação de datas em Java.
-<p> Local da solução do exercicio no arquivo: src/<a href="https://github.com/MirianFS/Testes-de-Software/blob/master/src/exercicio_1_junit_09_09_2020.java">exercicio_1_junit_09_09_20200</a>
+<p> Local da solução do exercicio no arquivo: src/<a href="https://github.com/MirianFS/Testes-de-Software/blob/master/src/exercicio_1_junit_09_09_2020.java">exercicio_1_junit_09_09_2020</a>
 
   
