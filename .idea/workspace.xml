@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea318d8c-3dd8-46c8-ac50-500b9f009a6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testes_13_03_2020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testes_13_03_2020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testes_13_03_2020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio_1_junit_09_09_2020.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Testes_13_03_2020">
+  <component name="RunManager" selected="JUnit.exercicio_1_junit_09_09_2020">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -51,19 +51,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testes_13_03_2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="exercicio_1_junit_09_09_2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testes_de_Software" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Testes_13_03_2020" />
+      <option name="MAIN_CLASS_NAME" value="exercicio_1_junit_09_09_2020" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testes_13_03_2020.TestIntervalo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="exercicio_1_junit_09_09_2020.TestIntervalo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testes_de_Software" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Testes_13_03_2020" />
+      <option name="MAIN_CLASS_NAME" value="exercicio_1_junit_09_09_2020" />
       <option name="METHOD_NAME" value="TestIntervalo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -72,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Testes_13_03_2020" />
-        <item itemvalue="JUnit.Testes_13_03_2020.TestIntervalo" />
+        <item itemvalue="JUnit.exercicio_1_junit_09_09_2020" />
+        <item itemvalue="JUnit.exercicio_1_junit_09_09_2020.TestIntervalo" />
       </list>
     </recent_temporary>
   </component>
@@ -91,12 +91,23 @@
       <workItem from="1584418077650" duration="875000" />
       <workItem from="1584419516298" duration="2046000" />
       <workItem from="1584489056111" duration="2626000" />
-      <workItem from="1599672535415" duration="3983000" />
+      <workItem from="1599672535415" duration="4592000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state width="1324" height="429" key="GridCell.Tab.0.bottom" timestamp="1599678209142">

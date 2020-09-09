@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
-public class Testes_13_03_2020 {
+public class exercicio_1_junit_09_09_2020 {
 
     //Feature 1: Criação de data
     @Test
